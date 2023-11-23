@@ -1,231 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS -->
-    <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
-        rel="stylesheet" 
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
-        crossorigin="anonymous"
-    >
+    <meta name = "viewport" content="width=device-width, initial-scale=1">
+    <meta name = "description" content="My Review. Landing Page Oficial">
+    <meta name = "keywords" content="Our Community, Get Started, About Us, Our Project, Contact Us">
     <link rel="stylesheet" href="assets/styles/styles.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <title>ourcommunity.myreview</title>
 </head>
-
 <body>
-    <header id="header">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
-                    <ul class ="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Home</a>
-                            <hr class="line">
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#row-registro">Registrate Aquí</a>
-                            <hr class="line">
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#row-productos">Productos</a>
-                            <hr class="line">
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#row-about-us">Sobre Nosotros</a>
-                            <hr class="line">
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <div id="autocomplete-container">
-            <input type="text" id="autocomplete-input" oninput="autocompletar(event)" onkeydown="seleccionarConTab(event)" placeholder="Busca un artículo de moda"/>
-            <div id="autocomplete-suggestion"></div>
-        </div>
-
-        <div class="container">
-            <div class="tittle">
-                ¿No tienes una cuenta? <br>
-                <a href="#row-registro" class="btn mt-3">Crear una cuenta</a>
-            </div>
-        </div>
-    </header>
-    <!-- Contenido principal de la página -->
     <main>
-        <div class="row-registro" id="row-registro">
-            <div class="container text-center"> 
-                <div class="register-form">
-                    <div class="row">
-                        <input type="text" class="register-input text-white" placeholder="Nombres" />
-                        <hr class="line">
-                    </div>
-                    <div class="row">
-                        <input type="text" class="register-input text-white" placeholder="Apellidos" />
-                        <hr class="line">
-                    </div>
-                    <div class="row">
-                        <input type="text" class="register-input text-white" placeholder="Correo" />
-                        <hr class="line">
-                    </div>
-                    <div class="row">
-                        <input type="text" class="register-input text-white" placeholder="Nombre de usuario" />
-                        <hr class="line">
-                    </div>
-                    <div class="row">
-                        <input type="text" class="register-input text-white" placeholder="Contraseña" />
-                        <hr class="line">
-                    </div>
-                    <div onclick="mostrarMensaje()"> <a class="btn">Registrar</a> </div>
-                    <p id="mensaje">El registro se realizó correctamente</p>
+        <header id="header">
+            <nav>
+                <div class="container">
 
-                    <script>
-                        function mostrarMensaje() {
-                            var mensaje = document.getElementById("mensaje");
-                            mensaje.style.display = "block";
-                        }
-                    </script>
+                    <div class="logo">
+                        <img src="assets/images/logo.png" alt="logo" />
+                    </div>
+
+                    <div class="links">
+                        <ul>
+                            <li> <a href="#header"> Get Started </a> </li>
+                
+                            <li> <a href="#about-us"> About Us </a> </li>home
+                            
+                            <li> <a href="#our-project"> Our Project </a> </li>
+
+                            <li> <a href="#contact"> Contact Us </a> </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+
+            <div class="header-content">
+                <div class="container grid-2">
+                    <div class="column-1">
+                        <h1 class="header-title">Join Us</h1>
+                        <p class="text" style="color: black;">
+                            Be yourself, share your experiences, and help each other.
+                        </p>
+                        <a href="#about-us" class="btn">Download App</a>
+                    </div>
+                    <div class="column-2 image">
+                        <img src="assets/images/my-review.png" class="img-element z-index" alt="" />
+                    </div>
                 </div>
             </div>
-        </div>
+        </header>
 
-        <div class="row" id="row-productos">
-            <div class="container text-center"> 
-                <div class="row">
-                    <video width="50%" height="50%" controls autoplay>
-                        <source src="../public/assets/video/aboutTheProduct.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-        </div>
-
-        <div class="about-us" id="row-about-us">
+        <section class="get-started" id="get-started">
             <div class="container">
                 <div class="section-header">
-                    <h3 class="title" data-title="Exchanges" style="text-align: center; font-size: 48px;"> <br> About Us</h3>
-                    <hr class="line">
-                    <p class="text2" style="text-align: center; font-size: 20px;">
-                        <br>
-                        Exchanges es una startup creada por cinco jovenes de la Universidad Peruana de Ciencias Aplicadas 
-                        para aficionados de la moda.
+                    <h3 class="title" data-title="Introducing My Review" style="color: black; font-weight: 450;">¿Todavía no cuentas con la aplicación My Review?</h3>
+                    <p class="text" style="color: var(--dark-two)">
+                        ¡No te pierdas esta oportunidad!
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section class="about1 section" id="about-us">
+            <div class="background-bg">
+                <div class="container">
+                    <div class="section-header">
+                        <h3 class="title" data-title="Our Community" style="color: var(--main-color); font-weight: 450;">About Us</h3>
+                        <p class="text" style="color: white;">
+                            Our Community se originó de la idea de 5 estudiantes de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas.
+                        </p>
+                    </div>
+    
+                    <div class="section-body">
+                        <div class="more-about-us">
+                            <a href="#our-project" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about2 section" id="about">
+            <div class="container">
+                <div class="section-body grid-2">
+                    <div class="column-1">
+                        <h3 class="title-sm">Como startup buscamos mejorar la experiencia del consumidor y forjar una comunidad donde se puedan compartir y expresar opiniones sinceras sobre diversos tópicos</h3>
+                        <p class="text">
+                            El propósito de My Review es ofrecer un entorno que ayude a los usuarios en sus decisiones de compra. 
+                            Se podrán agregar reseñas, comentarios y calificaciones sobre una amplia gama de productos en diferentes 
+                            secciones, como tecnología, productos del hogar, moda y mucho más!
+                        </p>
+                        <div class="skills">
+                            <h3 class="skill-title">Miles de reseñas de usuarios a tu disposición</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90%"></div>
+                            </div>
+                    
+                            <h3 class="skill-title">Conoce lo que compras</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95%"></div>
+                            </div>
+                            
+                            <h3 class="skill-title">Recibe descuentos exclusivos</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="100%"></div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">Home</a>
+                    </div>
+
+                    <div class="column-2 image" style="width: 500px; height: 450px; bottom: 80px; left: 100px;">
+                        <img src="assets/images/pros.jpg" class="z-index" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our-project section" id="our-project">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title" data-title="MyReview">Our Project</h3>
+                </div>
+            </div>
+            <div class="background-lg">
+                <div class="header-content">
+                    <div class="container grid-2">
+                        <div class="col">
+                            <img src="../public/assets/images/compartiendo.png" alt="Share your opinions" style="padding-bottom: 30px;"> 
+                            <h1>Share your opinions</h1>
+                            <p class="text">
+                                Comparte tus opiniones sobre algún producto
+                            </p>
+                        </div>
+                        <div class="col">
+                            <img src="../public/assets/images/subiendo.png" alt="Increase your level" style="padding-bottom: 30px;"> 
+                            <h1>Increase your level</h1>
+                            <p class="text">
+                                Tu nivel aumentará al recibir estrellas y obtener reseñas sobresalientes
+                            </p>
+                        </div>
+                        <div class="col">
+                            <img src="../public/assets/images/descuentos.png" alt="Get amazing discounts" style="padding-bottom: 30px;"> 
+                            <h1>Get amazing discounts</h1>
+                            <p class="text">
+                                Puedes recibir descuentos exclusivos subiendo de nivel. A más nivel, mejores descuentos.
+                            </p>
+                        </div>
+
+                        <a href="#contact" class="btn">Contáctanos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact-box">
+                    <div class="contact-info">
+                        <h3 class="title" style="width: 100%; text-align: center;">¿Tienes alguna duda?</h3>
+                        <p class="text" style="width: 100%; text-align: center; margin-top: 10px;">
+                            Para mas información, por favor buscanos en los siguientes canales de atención. Nuestro personal atenderá todas tus preguntas y te ayudará en lo que necesites.
+                        </p>
+                        <div class="information-wrap" style="margin-top: 50px; margin-left: 135px">
+                            <div class="information">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <p class="info-text">Av. la Marina 2810, San Miguel 15087</p>
+                            </div>
+
+                            <div class="information">
+                                <div class="contact-icon">
+                                    <i class="fas fa-paper-plane"></i>
+                                </div>
+                                <p class="info-text">ourcommunity@myreview.com</p>
+                            </div>
+
+                            <div class="information">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <p class="info-text">(+51) 978578303</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h3 class="title" style="width: 100%; text-align: center;">Contáctanos</h3>
+                        <div class="row">
+                            <input
+                                    type="text"
+                                    class="contact-input"
+                                    placeholder="First Name"
+                            />
+                            <input
+                                    type="text"
+                                    class="contact-input"
+                                    placeholder="Last Name"
+                            />
+                        </div>
+
+                        <div class="row">
+                            <input type="text" class="contact-input" placeholder="Phone" />
+                            <input type="email" class="contact-input" placeholder="Email" />
+                        </div>
+
+                        <div class="row">
+                            <textarea name="message" class="contact-input textarea" placeholder="Message"></textarea>
+                        </div>
+                        
+                        <a href="#" class="btn">Send</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="grid-4">
+                <div class="grid-3-col footer-about">
+                    <h3 class="title-sm">About</h3>
+                    <p class="text">
+                        ourcommunity@myreview.com
                     </p>
                 </div>
 
-                <div class="section-body">
-                    <div class="filter">
-                        <button class="filter-btn active" data-filter="*">All</button>
-                        <button class="filter-btn" data-filter=".CEO">CEO</button>
-                        <button class="filter-btn" data-filter=".Founder">Founder</button>
-                        <button class="filter-btn" data-filter=".Manager">Manager</button>
-                        <button class="filter-btn" data-filter=".Accountant">Accountant</button>
-                    </div>
+                <div class="grid-3-col footer-links">
+                    <h3 class="title-sm">Links</h3>
+                    <ul>
+                        <li> <a href="#">Get Started</a> </li>
+                        <li> <a href="#about-us"> About Us </a> </li>
+                        <li> <a href="#our-project"> Our Project </a> </li>
+                        <li> <a href="#contact"> Contact </a> </li>
+                    </ul>
+                </div>
 
-                    <div class="grid" style="position: relative; height: 550px">
-                        <div class="grid-item CEO" style="position: absolute; left: 0px; top: 0px">
-                            <div class="gallery-image">
-                                <img src="assets/images/paolo.png" alt="" />
-                                <div class="img-overlay">
-                                    <div class="img-description" style="color: black;"> <h3>CEO</h3> </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item Founder" style="position: absolute; left: 425px; top: 0px">
-                            <div class="gallery-image">
-                                <img src="assets/images/veronica.png" alt="" />
-                                <div class="img-overlay">
-                                    <div class="img-description" style="color: black;"> <h3>Founder</h3> </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item Manager" style="position: absolute; left: 850px; top: 0px">
-                            <div class="gallery-image">
-                                <img src="assets/images/miriam.png" alt="" />
-                                <div class="img-overlay">
-                                    <div class="img-description" style="color: black;"> <h3>Manager</h3> </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item Manager" style="position: absolute; left: 212.50px; top: 400px">
-                            <div class="gallery-image">
-                                <img src="assets/images/oscar.png" alt="" />
-                                <div class="img-overlay">
-                                    <div class="img-description" style="color: black;"> <h3>Manager</h3> </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item Accountant" style="position: absolute; left: 632.50px; top: 400px">
-                            <div class="gallery-image">
-                                <img src="assets/images/joaquin.png" alt="" />
-                                <div class="img-overlay">
-                                    <div class="img-description" style="color: black;"> <h3>Accountant</h3> </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="more-about-us" style="position: absolute; left: 578.50px; top: 360px">
-                            <a href="#" class="btn ">Home</a>
-                        </div>
-                    </div>
+                <div class="grid-3-col footer-newstletter">
+                    <h3 class="title-sm">Head Office</h3>
+                    <p class="text">
+                        Av. la Marina 2810, San Miguel 15087
+                    </p>
                 </div>
             </div>
-        </div>
-    </main>
-    <footer>
-        <div class="row text-white text-center justify-content-between" id="contact-us">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h4>NOSOTROS</h4>
-                        <div class="d-flex">
-                            <span class="material-icons">email </span>
-                            <p> wear&change@gmail.com </p>
-                        </div>
-                        <div class="d-flex">
-                            <span class="material-icons">phone </span>
-                            <p> (+51) 920 456 231 </p>
-                        </div>
-                        <div class="d-flex">
-                            <span class="material-icons">place </span>
-                            <p> San Miguel 15087 </p>
-                        </div>
-                    </div>
-            
-                    <div class="col">
-                        <h4>CREDITOS</h4>
-                        <div class="d-flex">
-                            <p> Copyright©2023 All rights reserved | Made by <span>Wear & Change</span> </p>
-                        </div>
-                    </div>
-            
-                    <div class="col">
-                        <h4>ENLACES</h4>
-                        <ul>
-                            <li><a href="#">Inicio</a></li>
-                            <li><a href="#row-productos">Productos</a></li>
-                            <li><a href="#row-about-us">Sobre Nosotros</a></li>
-                        </ul>
-                    </div>
+
+            <div class="bottom-footer">
+                <div class="copyright">
+                    <p class="text">
+                        Copyright&copy;2023 All rights reserved | Made by
+                        <span>My Review</span>
+                    </p>
+                    <p class="text" style="margin-left: 640px;">
+                        Term of use
+                    </p>
                 </div>
             </div>
         </div>
     </footer>
-    
-    <!--JS Y DEPENDENCIAS-->
-    <script 
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
-        crossorigin="anonymous"
-    ></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha384-7M9N4TE1cBO6/6tURHjvJpjW25eZb3vAAtK4Mm3A8RfxUqqBWOmiL6DaTEzRYpk3" crossorigin="anonymous"></script>
-
-    <script src = "assets/scripts/main.js" type="text/javascript"></script>
 </body>
-
 </html>
